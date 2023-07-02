@@ -142,6 +142,8 @@ def main():
     myLabel.grid(row=0, column=0)
 
     workout()
+    # root.after(1000, main)  # every second FOR TESTING
+    root.after(3_600_000, main)  # Checks every hour if day changes
 
     root.mainloop()
 
